@@ -47,7 +47,7 @@ fn main() -> ! {
 
         disp.clear().unwrap();
 
-        let mut time: u8 = 180;
+        let mut time: u8 = 120;
         
         for a in 0..time+1 {
 
@@ -62,7 +62,13 @@ fn main() -> ! {
 
         }
 
-        led.toggle();
+        for b in 0..10 {
+
+            led.toggle();
+            delay.delay_ms(100_u16);
+        }
+
+        
 
     });
     

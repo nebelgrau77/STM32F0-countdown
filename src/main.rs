@@ -62,7 +62,7 @@ fn main() -> ! {
 
         }
 
-        for b in 0..10 {
+        for b in 0..11 { //odd number to keep the LED on after it's done blinking
 
             led.toggle();
             delay.delay_ms(100_u16);
